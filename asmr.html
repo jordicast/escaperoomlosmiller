@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Escape Room Los Miller</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="googlebot" content="noindex">
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+      Escape Room Los Miller
+    </a>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row">
+
+            <div class="col-sm-2 navlateral">
+
+            </div>
+
+            <div class="col-sm-8 text-left">
+                <br>
+                <img src="img/logo-los-miller.png" class="rounded mx-auto d-block" alt="Logo Los Miller">
+                <br>
+                <h1>¡Descargar!</h1>
+                <p>
+                    TODO el contenido necesario para jugar
+                </p>
+                <a href="https://we.tl/b-Q40OCvEuev" target="_blank"><img src="img/download.png" border="0" width="64px"></a>
+                <hr>
+                <h3>Objetivo</h3>
+                <p>
+                    Encuentra el destino de Los Miller.
+                </p>
+                <p>
+                    Esta página se divide en dos fases para que podáis conseguir saber el destino del viaje.
+                </p>
+                <h3>Fase 1</h3>
+                <p>
+                    Para poder ayudar a Los Miller tienes que relajarte. Descubre su cuenta de Instagram. Los secretos siempre se dicen susurrando.
+                </p>
+                <br>
+                <img src="img/colgado.png" class="img-fluid rounded mx-auto d-block" alt="colgado">
+                <br>
+                <h3>Fase 2</h3>
+                <p>
+                    Los Miller son una familia de costumbres, les gusta compartir y comparar todo lo que hacen con su familia enseñándoles su álbum de fotografías y con sus seguidores en instagram.
+                </p>
+                <br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Solución</span>
+                    </div>
+                    <input type="text" id="respuesta" class="form-control" aria-label="¿Destino del viaje?" aria-describedby="inputGroup-sizing-lg" placeholder="¿Destino del viaje?">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="buttonComprobar" onclick="comprobar($('#respuesta').val(),'camping la ballena amarilla;#campinglaballenaamarilla;la ballena amarilla','calendario.html')">Comprobar</button>
+                    </div>
+                </div>
+                <br>
+                <div id="pistasBIS">
+                    <button class="btn btn-outline-primary btn-lg" type="button" id="buttonPistas" onclick="toggler('pistas')">Quiero ayuda !</button>
+                    <br>
+                </div>
+                <div id="pistas" style="display: none;">
+                    <h3>Pistas</h3>
+                    <p>Visualiza las pistas poco a poco</p>
+                    <div class="accordion" id="pistas">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Pista #1
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                                <div class="card-body">
+                                    Escucha el audio que has descargado “Relax ASMR”
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Pista #2
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                                <div class="card-body">
+                                    Rellena los huecos de la imagen con las letras que dice el audio “Relax ASMR”. Los personajes equivalen a la primera letra de su nombre y los personajes invertidos equivalen a la última letra de su nombre
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Pista #3
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                                <div class="card-body">
+                                    Ve al Instagram de los Miller: @_losmiller
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      Pista #4
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                                <div class="card-body">
+                                    Observa el álbum de fotografías familiares que has descargado
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Pista #5
+                                  </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                                <div class="card-body">
+                                    Compara las fotografías del álbum familiar y las de Instagram. Sólo hay una fotografía que esté en los dos sitios. Mira la descripción de Instagram
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSolucion">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSolucion" aria-expanded="false" aria-controls="collapseSolucion">
+                                  Solución
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSolucion" class="collapse" aria-labelledby="headingSolucion">
+                                <div class="card-body">
+                                    Camping La Ballena Amarilla
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-sm-2 navlateral">
+                <br>
+                <p>Colaborar</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="9RF7LR4T4ZEES" />
+                    <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Botón Donar con PayPal" />
+                    <img alt="" border="0" src="https://www.paypal.com/es_ES/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="comprobarModal" tabindex="-1" role="dialog" aria-labelledby="comprobarModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="comprobarModalLabel">¡Respuesta incorrecta!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Vuelve a intentarlo
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        Created by
+        <a href="https://www.visualgroupfilms.com/" target="_blank"><img src="img/logo-visual-group-films.png" border="0" width="150px" style="margin-left: 5px;"></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/libreria.js"></script>
+</body>
+
+</html>
